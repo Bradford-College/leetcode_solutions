@@ -16,6 +16,6 @@ Output: -1
 Explanation: "leeto" did not occur in "leetcode", so we return -1.
 '''
 
-def strStr(self, haystack: str, needle: str) -> int:
+def strStr(haystack: str, needle: str) -> int:
     # Code goes here
 

@@ -22,3 +22,23 @@ Input: nums = [3,3], target = 6
 Output: [0,1]
  
 '''
+
+def twosum(nums : list, target:int):
+    output = []
+    # Using Enumerate 
+    for index, num in enumerate(nums):
+        for i in range(index+1, len(nums)):
+            if num + nums[i] == target:
+                output.append(index)
+                output.append(i)
+                return output
+
+nums = [3,2,4]
+target = 6
+print(twosum(nums, target))
+
+print('++++++++++++++++++')
+print(twosum(nums=[3,3], target=6))
+
+print('++++++++++++++++++')
+print(twosum(nums=[2,7,11,15], target=9))
